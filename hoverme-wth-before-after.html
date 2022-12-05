@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOVER ME WITH BRFORE AFTER</title>
+	<style type="text/css">
+		div
+		{
+			height: 200PX;
+			width: 200PX;
+			background: darkgray;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 200PX;
+			margin: 200PX auto;
+			box-shadow: 0 0 30PX darkred inset;
+			position: relative;
+/*			overflow: hidden;*/
+			transition: 1S;
+/*			z-index: -1;*/
+
+		}
+
+		div::AFTER
+		{
+			content: "X";
+			height: 300PX;
+			width: 200PX;
+			top: -50%;
+			left: -100%;
+			background: linear-gradient(RED,BLUE,GRAY,CYAN,CORAL);
+			position: absolute;
+
+		}
+
+		div:HOVER::AFTER
+		{
+			left: 100%;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div>HOVER ME</div>
+
+</body>
+</html>

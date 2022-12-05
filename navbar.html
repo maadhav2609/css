@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NAVBAR</title>
+	<style>
+		.NAV
+		{
+			height: 100PX;
+			background: coral;
+			justify-content: CENTER;
+			display: flex;
+			text-align: center;
+			line-height: 100PX;
+			align-items: center;
+		}
+		.NAV UL
+		{
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+		.NAV .MENU
+		{
+			display: inline;
+			border: 2PX solid;
+			position: relative;
+			margin-right:20PX;
+			list-style: none;
+		}
+		.DROPDOWN
+		{
+			position: relative;
+			top: 100%;
+			left: 0;
+			display:block;
+		}
+		.DROPDOWN , LI
+		{
+			display:block;
+			position: absolute;
+             top: 100%;
+             left: 0;
+
+		}
+		 .MENU:HOVER .DROPDOWN
+		{
+			
+			width: 100%;
+			display: none;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<div class="NAV">
+		<ul>
+			<li class="MENU"><a href="">HOME</a>  </li>
+			<li class="MENU"><a href=""> ABOUT</a> </li>
+			<li class="MENU"><a href=""> SERVICES</a> </li>
+					<ul class="DROPDOWN">
+						<li><a href="">SERVICE 1</a></li>
+						<li><a href="">SERVICE 2</a></li>
+						<li><a href="">SERVICE 3</a></li>
+						<li><a href="">SERVICE 4</a></li>
+					</ul>	
+			<li class="MENU"><a href=""> CONTACT</a> </li>
+		</ul>
+	</div>
+
+</body>
+</html>

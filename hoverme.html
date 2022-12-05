@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOVER ME</title>
+	<style type="text/css">
+		
+		.PARENT
+		{
+			height: 200PX;
+			width: 200PX;
+			margin: 200PX auto;
+			background: lightblue;
+			text-align: center;
+			line-height: 200PX;
+/*			justify-content: CENTER;*/
+			border-radius: 50%;
+			position: relative	;
+			z-index: 0;
+			overflow: hidden;
+		}
+
+		.CHILD
+		{
+			height: 300PX;
+			width: 300PX;
+			background: linear-gradient(BLUE,GREEN,RED,CYAN);
+			top: 0;
+			left: -300PX;
+			position: absolute;
+			z-index: -1;
+/*			transition: 1S;*/
+/*			opacity: 0.40;*/
+		}
+
+		.PARENT:hover .CHILD
+		{
+			left: 300PX;
+			transition: 1S;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="PARENT">
+
+	HOVER ME
+		
+		<div class="CHILD"></div>
+	</div>
+
+</body>
+</html>
